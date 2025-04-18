@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.body{
+    background: url("green-fake-grass-background.jpg");
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(#E3D9B0,#B2E289,#B1C27A,#51C0BF);
+    height: 90vmin;
+    width: 100vmin;
+    border: 2px Solid black;
+    box-shadow: 10px,10px,20px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+
+}
+.head{
+    background:linear-gradient(darkred,black);
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px;
+}
+.food{
+    background:linear-gradient(pink);
+    border-radius: 7px;;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px;
+    
+}
+.snake{
+    background:linear-gradient(darkred,black);
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px;
+}
+#score{
+    position:absolute;
+    top: 100px;
+    right: 50px;
+    height: 100px;
+    width: 250px;
+    background-color: transparent;
+    font-size: 50px;
+    background: linear-gradient(white,lightgreen);
+    -webkit-background-clip: text;
+    color:transparent;
+}
